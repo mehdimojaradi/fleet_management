@@ -1,0 +1,14 @@
+node_modules/
+**/cypress/videos
+**/cypress/screenshots
+coverage/
+.nyc_output/
+dist/
+.cache/
+.vscode/
+cypress-coverage/
+yarn.lock
+.parcel-cache
+package-lock.json
+**/cypress/**/sample.*
+**/cypress/downloads
