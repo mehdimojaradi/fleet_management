@@ -8,9 +8,11 @@ beforeEach(function () {
 });
 
 describe('Login', function () {
-    it('TC_Login_01: Verify successful login with valid credentials',function () {
-        Auth.filloutWithValidCredentials();
-        Auth.clickLoginBtn().should('include', Dashboard.path)
+    it('TC_Login_01: Verify successful login with valid credentials', function () {
+        Auth.filloutWithValidCredentials()
+            .clickLoginBtn()
+            .getCurrentUrl()
+            .should('include', Dashboard.path)
     });
 
 });
